@@ -29,7 +29,6 @@ print(length_of_last_word("  "))
 ```
 ----
 
----
 2). Question 1: Write a program that finds the length of the last word.  
 
 **Solution : Python3** 
