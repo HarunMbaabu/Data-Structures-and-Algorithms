@@ -1,8 +1,9 @@
-### **Data Structures and Algorithms.**
+## **Data Structures and Algorithms.**
 
 This repository contains over 200 data structures and algorithm questions and their solution for interview preparation from different websites and Cracking the Coding Interview book by  Laakmann Gayle McDowell
 
-
+---
+### **Day 1**
 ---
 
 1). Question 1: Implement an algorithm using Python to determine if all characters in a string are unique, What if you can not use additional data structures. 
@@ -28,7 +29,10 @@ This repository contains over 200 data structures and algorithm questions and th
 
 --- 
 
-6). Question 6: Write a program that finds the length of the last word.  
+### **Day 2**
+
+---
+1). Question 1: Write a program that finds the length of the last word.  
 
 **Solution : Python3** 
 
@@ -52,3 +56,32 @@ print(length_of_last_word("  "))
 
 ```
 ----
+
+2). Question 2: Implement a function to check if a linked list is a palindrome( example of a palindrome is madam). 
+
+-- 
+
+3). Question 3:  Given a linked list which might contain a loop, implement an algorithm that returns the node at the beginning of the loop (if one doesn’t exist)  
+
+---
+
+
+4). Question 4: Explain how you could use a single array to implement three stacks. 
+
+
+---
+
+5). Question 5: Given a sorted (increasing order) array with unique integer elements, write an algorithm to create a binary search tree with minimal height. 
+
+--- 
+
+
+
+
+
+
+
+
+
+
+
