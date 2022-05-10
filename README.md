@@ -59,7 +59,7 @@ print(length_of_last_word("  "))
 
 2). Question 2: Implement a function to check if a linked list is a palindrome( example of a palindrome is madam). 
 
--- 
+--- 
 
 3). Question 3:  Given a linked list which might contain a loop, implement an algorithm that returns the node at the beginning of the loop (if one doesn’t exist)  
 
