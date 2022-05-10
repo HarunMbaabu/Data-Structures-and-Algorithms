@@ -73,7 +73,11 @@ print(length_of_last_word("  "))
 
 5). Question 5: Given a sorted (increasing order) array with unique integer elements, write an algorithm to create a binary search tree with minimal height. 
 
---- 
+---  
+
+### **Day 3**
+
+---
 
 
 
