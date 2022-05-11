@@ -12,6 +12,43 @@ This repository contains over 200 data structures and algorithm questions and th
 
 2). Question 2: Given two strings write a method to decide if one os a permutation or the other. 
 
+
+```python 
+def arePermutation(str1, str2):
+     
+    # Get lengths of both strings
+    n1 = len(str1)
+    n2 = len(str2)
+ 
+    # If length of both strings is not same,
+    # then they cannot be Permutation
+    if (n1 != n2):
+        return False
+ 
+    # Sort both strings
+    a = sorted(str1)
+    str1 = " ".join(a)
+    b = sorted(str2)
+    str2 = " ".join(b)
+ 
+    # Compare sorted strings
+    for i in range(0, n1, 1):
+        if (str1[i] != str2[i]):
+            return False
+ 
+    return True
+ 
+# Driver Code
+if __name__ == '__main__':
+    str1 = "test"
+    str2 = "ttew"
+    if (arePermutation(str1, str2)):
+        print("Yes")
+    else:
+        print("No")
+
+```
+
 --- 
 
 3). Question 3: Write an algorithm such that if an element in a MxN matrix is O, it entire row and column is set to 0. 
