@@ -52,6 +52,8 @@ if __name__ == '__main__':
 ``` 
 
 
+**Note:** The time complexity is 0(n) while space complexity is 0(1) 
+
 
 --- 
 
