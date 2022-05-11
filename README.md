@@ -8,6 +8,51 @@ This repository contains over 200 data structures and algorithm questions and th
 
 1). Question 1: Implement an algorithm using Python to determine if all characters in a string are unique, What if you can not use additional data structures. 
 
+```python 
+MAX_CHAR = 256;
+ 
+def uniqueCharacters(string):
+    n = len(string)
+     
+    # If length is greater than 256,
+    # some characters must have
+    # been repeated
+    if n > MAX_CHAR:
+        return False
+ 
+    chars = [False] * MAX_CHAR
+ 
+    for i in range(n):
+        index = ord(string[i])
+ 
+        '''
+         * If the value is already True,
+         string has duplicate characters,
+         return False'''
+        if (chars[index] == True):
+            return False
+ 
+        chars[index] = True
+ 
+    ''' No duplicates encountered,
+        return True '''
+    return True
+ 
+# Driver code
+if __name__ == '__main__':
+
+    input = input("Enter your Text: ")
+    if (uniqueCharacters(input)):
+        print(f"The String {input} has all unique characters")
+
+    else:
+        print("The String {input} has duplicate characters")
+ 
+
+``` 
+
+
+
 --- 
 
 2). Question 2: Given two strings write a method to decide if one os a permutation or the other. 
@@ -46,7 +91,6 @@ if __name__ == '__main__':
         print("Yes")
     else:
         print("No")
-
 ```
 
 --- 
