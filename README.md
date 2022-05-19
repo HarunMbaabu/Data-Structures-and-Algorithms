@@ -2,6 +2,67 @@
 
 This repository contains over 200 data structures and algorithm questions and their solution for interview preparation from different websites and Cracking the Coding Interview book by  Laakmann Gayle McDowell
 
+
+Hash Table - in simple terms we can say that a hasktable is a key value look up, It is a data structure that maps a key to a value for high efficient look up. 
+
+**Function to display hashtable** 
+
+```python
+# Function to display hashtable
+def display_hash(hashTable):
+      
+    for i in range(len(hashTable)):
+        print(i, end = " ")
+          
+        for j in hashTable[i]:
+            print("-->", end = " ")
+            print(j, end = " ")
+              
+        print()
+  
+# Creating Hashtable as 
+# a nested list.
+HashTable = [[] for _ in range(10)]
+  
+# Hashing Function to return 
+# key for every value.
+def Hashing(keyvalue):
+    return keyvalue % len(HashTable)
+  
+  
+# Insert Function to add
+# values to the hash table
+def insert(Hashtable, keyvalue, value):
+      
+    hash_key = Hashing(keyvalue)
+    Hashtable[hash_key].append(value)
+  
+# Driver Code
+insert(HashTable, 10, 'Harun')
+insert(HashTable, 25, 'Mwenda')
+insert(HashTable, 20, 'Linet')
+insert(HashTable, 9, 'Patrick')
+insert(HashTable, 21, 'Mwendwa')
+insert(HashTable, 21, 'Mwangi')
+  
+display_hash (HashTable)
+```
+
+
+**Check duplicate.**
+
+```python 
+def get_squared_number(numbers):
+    squared_numbers = [] 
+    for n in numbers: 
+        squared_numbers.append(n*n) 
+    return squared_numbers 
+
+numbers = [10,20,30]
+
+get_squared_number(numbers)
+```
+
 ---
 ### **Day 1**
 ---
